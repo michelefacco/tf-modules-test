@@ -14,3 +14,9 @@ variable "code" {
   description = "The location of the source code."
   type        = string
 }
+
+variable "trusted_entities" {
+  description = "The list of trusted entities for this related execution role."
+  type        = list(string)
+  default     = []
+}

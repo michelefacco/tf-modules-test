@@ -6,6 +6,10 @@ module "lambda_function" {
   handler       = "index.handler"
   runtime       = var.runtime
 
+  cloudwatch_logs_retention_in_days = 30
+
+  trusted_entities = var.trusted_entities
+
   source_path = var.code
   tags = {
     Name = var.name
