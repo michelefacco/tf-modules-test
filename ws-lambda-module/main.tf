@@ -10,6 +10,7 @@ module "lambda_function" {
 
   trusted_entities = var.trusted_entities
 
+  publish     = true
   source_path = var.code
   tags = {
     Name = var.name
