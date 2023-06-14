@@ -1,10 +1,5 @@
 # Input variable definitions
 
-variable "region" {
-  description = "Test adding region..."
-  type        = string
-}
-
 variable "bucket_name" {
   description = "Name of the s3 bucket. Must be unique."
   type        = string
